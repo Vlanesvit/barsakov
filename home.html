@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=, initial-scale=1.0" />
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+	<link rel="stylesheet" href="css/rs-style.css" />
+
+	<title>Максим Барсаков</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<link rel="stylesheet" href="css/rs-header.css" />
+		<script src="js/rs-header.js" defer></script>
+		<header>
+			<div class="rs-header">
+				<div class="rs-header__container">
+					<div class="rs-header__wrapper">
+						<div class="rs-header__logo">
+							<a href="#">
+								<img src="./img/header/logo.svg" alt="">
+							</a>
+						</div>
+
+						<div class="rs-header__menu menu">
+							<button type="button" class="menu__icon icon-menu"><span></span></button>
+							<div class="menu__block">
+								<nav class="menu__body">
+									<ul class="menu__list">
+										<li class="menu-item menu__dropdown">
+											<a href="#">О докторе</a>
+
+											<ul class="menu__dropdown-list" hidden>
+												<li class="menu-item menu__dropdown">
+													<a href="#">О докторе</a>
+
+													<ul class="menu__dropdown-list" hidden>
+														<li class="menu-item">
+															<a href="#">О докторе</a>
+														</li>
+
+														<li class="menu-item">
+															<a href="#">О докторе</a>
+														</li>
+
+														<li class="menu-item">
+															<a href="#">О докторе</a>
+														</li>
+
+														<li class="menu-item">
+															<a href="#">О докторе</a>
+														</li>
+													</ul>
+												</li>
+
+												<li class="menu-item">
+													<a href="#">О докторе</a>
+												</li>
+
+												<li class="menu-item">
+													<a href="#">О докторе</a>
+												</li>
+
+												<li class="menu-item">
+													<a href="#">О докторе</a>
+												</li>
+											</ul>
+										</li>
+										<li class="menu-item"><a href="#">Галерея работ</a></li>
+										<li class="menu-item"><a href="#">Хирургия</a></li>
+										<li class="menu-item"><a href="#">Контакты</a></li>
+									</ul>
+
+									<ul class="menu__list language__list">
+										<li class="menu-item _select-language">
+											<a href="#">Ru</a>
+										</li>
+										<li class="menu-item">
+											<a href="#">En</a>
+										</li>
+									</ul>
+
+									<div class="rs-header__btn">
+										<a href="#">
+											Запись на консультацию
+											<span>по пластической хирургии</span>
+										</a>
+									</div>
+								</nav>
+							</div>
+						</div>
+
+						<a href="#" class="rs-header__search-link search-show">
+							<svg width="49" height="49" viewBox="0 0 49 49" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M22.4583 38.7917C31.479 38.7917 38.7917 31.479 38.7917 22.4583C38.7917 13.4377 31.479 6.125 22.4583 6.125C13.4377 6.125 6.125 13.4377 6.125 22.4583C6.125 31.479 13.4377 38.7917 22.4583 38.7917Z"
+									stroke="#FFFCF8" stroke-width="0.5" stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path d="M42.875 42.8751L34.0958 34.0959" stroke="#FFFCF8" stroke-width="0.5"
+									stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</a>
+
+						<div class="rs-header__language">
+							<button type="button" class="rs-header__language_btn">
+								<span>RU</span>
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_266_663)">
+										<path d="M4 6L8 10L12 6" stroke="white" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</g>
+									<defs>
+										<clipPath id="clip0_266_663">
+											<rect width="16" height="16" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+							</button>
+							<div class="rs-header__language_body">
+								<ul>
+									<li><a href="#" class="_selected">RU</a></li>
+									<li><a href="#">EN</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<a href="#" class="rs-header__btn">
+							Запись на консультацию
+							<span>по пластической хирургии</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="rs-search search-modal">
+					<div class="rs-search__overlay">
+						<div class="cursor">
+							<div class="cursor__point-zero">
+								<div class="cursor__wrapper">
+									<div class="cursor__circle"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="rs-search__block">
+						<div class="rs-search__wrapper">
+							<form action="#" class="rs-search__form">
+								<div class="rs-search__line">
+									<input type="text" placeholder="Напишите, что вы хотите найти"
+										class="rs-search__input" required>
+									<button class="rs-search__btn rs-search__clear _rs-icon-close"
+										type="button"></button>
+									<button class="rs-search__btn rs-search__submit _rs-icon-search"
+										type="submit"></button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- <main class="page">
+
+			<link rel="stylesheet" href="css/rs-main.css">
+			<section class="rs-main">
+				<div class="rs-main__container">
+					<div class="rs-main__wrapper">
+						<div class="rs-main__text">
+							<h1>
+								Обретайте
+								<span>грани</span>
+								красоты
+							</h1>
+
+							Я — профессионал, который призван помочь раскрыть красоту во всех её проявлениях
+						</div>
+						<div class="rs-main__img">
+							<img src="./img/blocks/main_img-1.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<link rel="stylesheet" href="css/rs-education.css">
+			<section class="rs-education">
+				<div class="rs-education__container">
+					<div class="rs-education__title">
+						Я — профессионал, который призван помочь раскрыть красоту во всех её проявлениях
+					</div>
+					<div class="rs-education__wrapper">
+						<div class="rs-education__img">
+							<img src="./img/blocks/exp_img-1.png" alt="">
+						</div>
+						<div class="rs-education__text">
+							<div class="section-header">
+								<h6>образование</h6>
+								<h2>Барсаков Максим Александрович</h2>
+							</div>
+
+							<div class="rs-education__img">
+								<img src="./img/blocks/exp_img-1.png" alt="">
+							</div>
+
+							<div class="rs-education__title">
+								Я — профессионал, который призван помочь раскрыть красоту во всех её проявлениях
+							</div>
+
+							<div class="rs-education__block">
+								<h6>Медицинское образование</h6>
+
+								<div class="rs-education__list">
+									<div class="rs-education__item">
+										<div class="rs-education__year">2008</div>
+										<div class="rs-education__desc">
+											<h4>Кубанский государственный медицинский университет</h4>
+
+											<ul>
+												<li>Квалификация: Врач</li>
+												<li>Специальность: «Лечебное дело»</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="rs-education__block">
+								<h6>Постдипломное образование</h6>
+
+								<div class="rs-education__list">
+									<div class="rs-education__item">
+										<div class="rs-education__year">2009</div>
+										<div class="rs-education__desc">
+											<h4>Санкт-Петербургский научно-исследовательский институт скорой помощи
+												имени И.И. Джанелидзе</h4>
+
+											<ul>
+												<li>Интернатура по направлению: Хирургия</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="rs-education__item">
+										<div class="rs-education__year">2011</div>
+										<div class="rs-education__desc">
+											<h4>Санкт-Петербургская медицинская академия последипломного образования
+											</h4>
+
+											<ul>
+												<li>Клиническая ординатура по направлению: Челюстно-лицевая хирургия
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="rs-education__item">
+										<div class="rs-education__year">2011</div>
+										<div class="rs-education__desc">
+											<h4>Санкт-Петербургский научно-исследовательский институт скорой помощи
+												имени И.И. Джанелидзе</h4>
+
+											<ul>
+												<li>Специализация: Пластическая хирургия</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="rs-education__item">
+										<div class="rs-education__year">2021</div>
+										<div class="rs-education__desc">
+											<h4>Санкт-Петербургская Военно-медицинская академии им. С.М.Кирова.</h4>
+
+											<ul>
+												<li>Клиническая ординатура по направлению: Пластическая хирургия</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<link rel="stylesheet" href="css/rs-features.css">
+			<section class="rs-features">
+				<div class="rs-features__container">
+					<div class="section-header">
+						<h6>научная деятельность</h6>
+						<h2>Достижения в научной деятельности</h2>
+					</div>
+
+					<div class="rs-features__wrapper">
+						<div class="rs-features__list">
+							<div class="rs-features__block">
+								<div class="rs-features__item">
+									<div class="rs-features__icon">
+										<img src="./img/blocks/action_img-1.svg" alt="">
+									</div>
+									<div class="rs-features__desc">
+										<h3>Автор нескольких патентов </h3>
+										<p>По пластике молочных желёз, пластике ушных раковин.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="rs-features__block">
+								<div class="rs-features__item">
+									<div class="rs-features__icon">
+										<img src="./img/blocks/action_img-2.svg" alt="">
+									</div>
+									<div class="rs-features__desc">
+										<h3>Ассистент кафедры</h3>
+										<p>Пластической и реконструктивной хирургии Северо-Западного государственного
+											медицинского университета им. И.И.Мечникова</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="rs-features__block">
+								<div class="rs-features__item">
+									<div class="rs-features__icon">
+										<img src="./img/blocks/action_img-3.svg" alt="">
+									</div>
+									<div class="rs-features__desc">
+										<h3>Состоит в ОПРЭХ</h3>
+										<p>Действительный член Российского общества пластических, реконструктивных и
+											эстетических хирургов — ОПРЭХ.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<link rel="stylesheet" href="css/rs-services.css">
+			<section class="rs-services">
+				<div class="rs-services__container">
+					<div class="rs-services__head">
+						<div class="rs-services__wrapper">
+							<div class="rs-services__left">
+								<div class="section-header">
+									<h6>перечень услуг</h6>
+									<h2>Каждому человеку дарована красота</h2>
+								</div>
+							</div>
+							<div class="rs-services__right">
+								<p>Красота внутренняя — тонкие струны души, и красота внешняя — неповторимый чарующий
+									облик. </p>
+								<p>Нужно только обнаружить ее оригинальные черты и, наконец, открыть миру во всех
+									проявлениях. </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="rs-services__wrapper">
+						<div class="rs-services__list">
+							<div class="rs-services__block">
+								<div class="rs-services__item">
+									<a href="#">
+										<div class="rs-services__img">
+											<img src="./img/blocks/services_img-1.jpg" alt="">
+										</div>
+										<div class="rs-services__desc">
+											<h3>Маммопластика</h3>
+											<span>
+												подробнее
+												<svg width="30" height="10" viewBox="0 0 30 10" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path d="M1 5.46851H21.8379H1Z" fill="white" />
+													<path d="M1 5.46851H21.8379" stroke="white" stroke-miterlimit="10"
+														stroke-linecap="square" />
+													<path
+														d="M20.6294 5.29219H28.9997C24.3868 5.29219 18.5808 9.5831 18.5808 9.5831L20.6294 5.29219ZM20.6294 5.29219L18.5808 1C18.5808 1 24.3881 5.29219 28.9997 5.29219H20.6294Z"
+														fill="white" />
+													<path
+														d="M20.6294 5.29219H28.9997M20.6294 5.29219L18.5808 9.5831C18.5808 9.5831 24.3868 5.29219 28.9997 5.29219M20.6294 5.29219L18.5808 1C18.5808 1 24.3881 5.29219 28.9997 5.29219"
+														stroke="white" stroke-width="0.5" stroke-miterlimit="10"
+														stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</span>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="rs-services__block">
+								<div class="rs-services__item">
+									<a href="#">
+										<div class="rs-services__img">
+											<img src="./img/blocks/services_img-2.jpg" alt="">
+										</div>
+										<div class="rs-services__desc">
+											<h3>Риносептопластика</h3>
+											<span>
+												подробнее
+												<svg width="30" height="10" viewBox="0 0 30 10" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path d="M1 5.46851H21.8379H1Z" fill="white" />
+													<path d="M1 5.46851H21.8379" stroke="white" stroke-miterlimit="10"
+														stroke-linecap="square" />
+													<path
+														d="M20.6294 5.29219H28.9997C24.3868 5.29219 18.5808 9.5831 18.5808 9.5831L20.6294 5.29219ZM20.6294 5.29219L18.5808 1C18.5808 1 24.3881 5.29219 28.9997 5.29219H20.6294Z"
+														fill="white" />
+													<path
+														d="M20.6294 5.29219H28.9997M20.6294 5.29219L18.5808 9.5831C18.5808 9.5831 24.3868 5.29219 28.9997 5.29219M20.6294 5.29219L18.5808 1C18.5808 1 24.3881 5.29219 28.9997 5.29219"
+														stroke="white" stroke-width="0.5" stroke-miterlimit="10"
+														stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</span>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="rs-services__block">
+								<div class="rs-services__item">
+									<a href="#">
+										<div class="rs-services__img">
+											<img src="./img/blocks/services_img-3.jpg" alt="">
+										</div>
+										<div class="rs-services__desc">
+											<h3>Пластика лица</h3>
+											<span>
+												подробнее
+												<svg width="30" height="10" viewBox="0 0 30 10" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path d="M1 5.46851H21.8379H1Z" fill="white" />
+													<path d="M1 5.46851H21.8379" stroke="white" stroke-miterlimit="10"
+														stroke-linecap="square" />
+													<path
+														d="M20.6294 5.29219H28.9997C24.3868 5.29219 18.5808 9.5831 18.5808 9.5831L20.6294 5.29219ZM20.6294 5.29219L18.5808 1C18.5808 1 24.3881 5.29219 28.9997 5.29219H20.6294Z"
+														fill="white" />
+													<path
+														d="M20.6294 5.29219H28.9997M20.6294 5.29219L18.5808 9.5831C18.5808 9.5831 24.3868 5.29219 28.9997 5.29219M20.6294 5.29219L18.5808 1C18.5808 1 24.3881 5.29219 28.9997 5.29219"
+														stroke="white" stroke-width="0.5" stroke-miterlimit="10"
+														stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</span>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="rs-services__block">
+								<div class="rs-services__item">
+									<a href="#">
+										<div class="rs-services__img">
+											<img src="./img/blocks/services_img-4.jpg" alt="">
+										</div>
+										<div class="rs-services__desc">
+											<h3>Пластика тела</h3>
+											<span>
+												подробнее
+												<svg width="30" height="10" viewBox="0 0 30 10" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path d="M1 5.46851H21.8379H1Z" fill="white" />
+													<path d="M1 5.46851H21.8379" stroke="white" stroke-miterlimit="10"
+														stroke-linecap="square" />
+													<path
+														d="M20.6294 5.29219H28.9997C24.3868 5.29219 18.5808 9.5831 18.5808 9.5831L20.6294 5.29219ZM20.6294 5.29219L18.5808 1C18.5808 1 24.3881 5.29219 28.9997 5.29219H20.6294Z"
+														fill="white" />
+													<path
+														d="M20.6294 5.29219H28.9997M20.6294 5.29219L18.5808 9.5831C18.5808 9.5831 24.3868 5.29219 28.9997 5.29219M20.6294 5.29219L18.5808 1C18.5808 1 24.3881 5.29219 28.9997 5.29219"
+														stroke="white" stroke-width="0.5" stroke-miterlimit="10"
+														stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</span>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<link rel="stylesheet" href="css/rs-footer.css" />
+		<footer>
+			<div class="rs-footer">
+				<div class="rs-footer__container">
+					<div class="rs-footer__wrapper">
+						<div class="rs-footer__left">
+							<div class="section-header">
+								<h6>связаться со мной</h6>
+								<h2>Обретайте грани красоты</h2>
+							</div>
+						</div>
+						<div class="rs-footer__right">
+							<div class="rs-footer__contact">
+								<ul>
+									<li>
+										<span>администратор</span>
+										<a href="tel:79819869077">+7 981 986 90 77</a>
+									</li>
+									<li>
+										<span>написать мне</span>
+										<a href="mailto:barsakov@inbox.ru">barsakov@inbox.ru</a>
+									</li>
+									<li>
+										<span>барсаков максим александрович</span>
+										<a href="tel:79110836085">+7 911 083 60 85</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="rs-footer__contact">
+								<ul>
+									<li>
+										<span>Клиника Пирогова</span>
+										<a href="https://yandex.ru/maps/-/CDRsUNPL" target="_blank">г.
+											Санкт-Петербург Большой проспект Васильевского острова д 49-51 </a>
+									</li>
+									<li>
+										<span>Клиника Екатерининская</span>
+										<a href="https://yandex.ru/maps/-/CDRsUR6n" target="_blank">г. Краснодар ул.
+											им. Героя Яцкова И.В . 2/2 </a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="rs-footer__wrapper">
+						<div class="rs-footer__left">
+							<div class="rs-footer__logo">
+								<a href="#">
+									<img src="./img/header/logo.svg" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="rs-footer__right">
+							<div class="rs-footer__body">
+								<div class="rs-footer__text">
+									<p>Медицинские услуги имеют противопоказания, необходима консультация специалиста.
+										Информация на сайте не является публичной офертой.</p>
+									<p>Данный ресурс может содержать материалы 18+</p>
+								</div>
+
+								<div class="rs-footer__social">
+									<ul>
+										<li>
+											<a href="#">
+												<span>Вконтакте</span>
+												<img src="./img/icons/vk.svg" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>Telegram</span>
+												<img src="./img/icons/tg.svg" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>YouTube</span>
+												<img src="./img/icons/yt.svg" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>Instagram</span>
+												<img src="./img/icons/inst.svg" alt="">
+											</a>
+										</li>
+									</ul>
+								</div>
+
+								<div class="rs-footer__copyright">
+									© 2023 Барсаков Максим
+									<a href="#">Политика конфиденциальности</a>
+								</div>
+							</div>
+
+							<div class="rs-footer__social">
+								<ul>
+									<li>
+										<a href="#">
+											<span>Вконтакте</span>
+											<img src="./img/icons/vk.svg" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>Telegram</span>
+											<img src="./img/icons/tg.svg" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>YouTube</span>
+											<img src="./img/icons/yt.svg" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>Instagram</span>
+											<img src="./img/icons/inst.svg" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer> -->
+
+	</div>
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>AOS.init({ duration: 1000, easing: "ease-out-quart", once: true });</script>
+	<script src="js/rs-script.js"></script>
+
+</body>
+
+</html>

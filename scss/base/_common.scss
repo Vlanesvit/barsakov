@@ -1,0 +1,60 @@
+body {
+	background-image: url("../../img/blocks/body_bg.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	@media (max-width: 767.98px) {
+		background-image: url("../../img/blocks/body_bg-mob.jpg");
+	}
+}
+
+section {
+	position: relative;
+}
+
+// Text ========================================================================================================================================================
+
+// Button ========================================================================================================================================================
+.rs-btn {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	transition: all 0.3s ease 0s;
+	z-index: 10;
+	border-radius: 5px;
+}
+
+.rs-input {
+	outline: none;
+	width: 100%;
+	transition: 0.3s ease 0s;
+	transition-property: background-color, border-color;
+
+	&::placeholder {
+		color: #727272;
+	}
+
+	&._form-focus {
+	}
+
+	&._form-error {
+		border-color: #eb1320;
+	}
+
+	&._form-right {
+		border-color: #d2e3f0;
+		background-color: #e6fcf5;
+	}
+}
+
+textarea.rs-input {
+	resize: vertical;
+	min-height: 215px;
+}
+
+// Block  ========================================================================================================================================================
+.section-header {
+}
