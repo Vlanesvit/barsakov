@@ -1,29 +1,112 @@
 .rs-features {
+	margin-top: 193px;
+
+	@media (max-width: 1920px) {
+		margin-top: calc(80px + (193 - 80) * ((100vw - 320px) / (1920 - 320)));
+	}
+
 	// .rs-features__container
 	&__container {
 	}
 
 	// .rs-features__wrapper
 	&__wrapper {
+		margin-top: 55px;
+
+		@media (max-width: 1920px) {
+			margin-top: calc(40px + (55 - 40) * ((100vw - 320px) / (1920 - 320)));
+		}
 	}
 
 	// .rs-features__list
 	&__list {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin: -15px;
+
+		@media (max-width: 1920px) {
+			margin: calc((-20px) + ((-15) - (-20)) * ((100vw - 320px) / (1920 - 320)));
+		}
+
+		@media (max-width: 991.98px) {
+			justify-content: center;
+		}
 	}
 
 	// .rs-features__block
 	&__block {
+		flex: 0 0 33.33333%;
+		max-width: calc(453px + 30px);
+		padding: 15px;
+
+		@media (max-width: 1920px) {
+			padding: calc(20px + (15 - 20) * ((100vw - 320px) / (1920 - 320)));
+		}
+
+		@media (max-width: 991.98px) {
+			flex: 0 0 50%;
+		}
+
+		@media (max-width: 767.98px) {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
 	}
 
 	// .rs-features__item
 	&__item {
+		@media (max-width: 991.98px) {
+			display: flex;
+			flex-direction: row-reverse;
+			align-items: center;
+			justify-content: space-between;
+		}
 	}
 
 	// .rs-features__icon
 	&__icon {
+		@media (max-width: 991.98px) {
+			flex: 0 0 80px;
+			margin-left: 24px;
+		}
 	}
 
 	// .rs-features__desc
 	&__desc {
+		@media (min-width: 991.98px) {
+			margin-top: 32px;
+
+			@media (max-width: 1920px) {
+				margin-top: calc(20px + (32 - 20) * ((100vw - 991.98px) / (1920 - 991.98)));
+			}
+		}
+
+		h3 {
+			font-weight: 300;
+			font-size: 32px;
+			// line-height: 38px;
+			line-height: 120%;
+			letter-spacing: -0.02em;
+
+			@media (max-width: 1920px) {
+				font-size: calc(24px + (32 - 24) * ((100vw - 320px) / (1920 - 320)));
+			}
+		}
+
+		p {
+			margin-top: 4px;
+			font-weight: 300;
+			font-size: 21px;
+			// line-height: 29px;
+			line-height: 140%;
+			color: rgba(255, 255, 255, 0.8);
+
+			@media (max-width: 1920px) {
+				font-size: calc(16px + (21 - 16) * ((100vw - 320px) / (1920 - 320)));
+				margin-top: calc(8px + (4 - 8) * ((100vw - 320px) / (1920 - 320)));
+			}
+		}
 	}
 }

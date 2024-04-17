@@ -20,7 +20,7 @@
 		<link rel="stylesheet" href="css/rs-header.css" />
 		<script src="js/rs-header.js" defer></script>
 		<header>
-			<div class="rs-header">
+			<div class="rs-header" data-aos="fade-down" data-aos-delay="100">
 				<div class="rs-header__container">
 					<div class="rs-header__wrapper">
 						<div class="rs-header__logo">
@@ -79,7 +79,7 @@
 									</ul>
 
 									<ul class="menu__list language__list">
-										<li class="menu-item _select-language">
+										<li class="menu-item _selected">
 											<a href="#">Ru</a>
 										</li>
 										<li class="menu-item">
@@ -145,7 +145,16 @@
 						<div class="cursor">
 							<div class="cursor__point-zero">
 								<div class="cursor__wrapper">
-									<div class="cursor__circle"></div>
+									<div class="cursor__circle">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+											<path d="M1 1.25885L9.84163 10.1005L18 18.2588" stroke="#000"
+												stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											</path>
+											<path d="M19 1.25885L10.1584 10.1005L2 18.2588" stroke="#000"
+												stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											</path>
+										</svg>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -156,10 +165,24 @@
 								<div class="rs-search__line">
 									<input type="text" placeholder="Напишите, что вы хотите найти"
 										class="rs-search__input" required>
-									<button class="rs-search__btn rs-search__clear _rs-icon-close"
-										type="button"></button>
-									<button class="rs-search__btn rs-search__submit _rs-icon-search"
-										type="submit"></button>
+									<button class="rs-search__btn rs-search__clear" type="button">
+										<svg viewBox="0 0 20 20" fill="none">
+											<path d="M1 1.25885L9.84163 10.1005L18 18.2588" stroke="#000"
+												stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											</path>
+											<path d="M19 1.25885L10.1584 10.1005L2 18.2588" stroke="#000"
+												stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											</path>
+										</svg>
+									</button>
+									<button class="rs-search__btn rs-search__submit" type="submit">
+										<svg viewBox="0 0 24 25" fill="none">
+											<path
+												d="M14.9536 15.4458L21 21.5M17 10.5C17 14.366 13.866 17.5 10 17.5C6.13401 17.5 3 14.366 3 10.5C3 6.63401 6.13401 3.5 10 3.5C13.866 3.5 17 6.63401 17 10.5Z"
+												stroke="#000" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
 								</div>
 							</form>
 						</div>
@@ -168,22 +191,20 @@
 			</div>
 		</header>
 
-		<!-- <main class="page">
+		<main class="page">
 
 			<link rel="stylesheet" href="css/rs-main.css">
 			<section class="rs-main">
 				<div class="rs-main__container">
 					<div class="rs-main__wrapper">
-						<div class="rs-main__text">
+						<div class="rs-main__text" data-aos="fade-right" data-aos-delay="200">
 							<h1>
 								Обретайте
 								<span>грани</span>
 								красоты
 							</h1>
-
-							Я — профессионал, который призван помочь раскрыть красоту во всех её проявлениях
 						</div>
-						<div class="rs-main__img">
+						<div class="rs-main__img" data-aos="fade-left" data-aos-delay="400">
 							<img src="./img/blocks/main_img-1.png" alt="">
 						</div>
 					</div>
@@ -193,14 +214,14 @@
 			<link rel="stylesheet" href="css/rs-education.css">
 			<section class="rs-education">
 				<div class="rs-education__container">
-					<div class="rs-education__title">
+					<div class="rs-education__title" data-aos="fade-right" data-aos-delay="100">
 						Я — профессионал, который призван помочь раскрыть красоту во всех её проявлениях
 					</div>
 					<div class="rs-education__wrapper">
-						<div class="rs-education__img">
+						<div class="rs-education__img" data-aos="fade-right" data-aos-delay="400">
 							<img src="./img/blocks/exp_img-1.png" alt="">
 						</div>
-						<div class="rs-education__text">
+						<div class="rs-education__text" data-aos="fade-left" data-aos-delay="200">
 							<div class="section-header">
 								<h6>образование</h6>
 								<h2>Барсаков Максим Александрович</h2>
@@ -225,7 +246,7 @@
 
 											<ul>
 												<li>Квалификация: Врач</li>
-												<li>Специальность: «Лечебное дело»</li>
+												<li><strong>Специальность: «Лечебное дело»</strong></li>
 											</ul>
 										</div>
 									</div>
@@ -293,14 +314,14 @@
 			<link rel="stylesheet" href="css/rs-features.css">
 			<section class="rs-features">
 				<div class="rs-features__container">
-					<div class="section-header">
+					<div class="section-header" data-aos="fade-right" data-aos-delay="100">
 						<h6>научная деятельность</h6>
 						<h2>Достижения в научной деятельности</h2>
 					</div>
 
 					<div class="rs-features__wrapper">
 						<div class="rs-features__list">
-							<div class="rs-features__block">
+							<div class="rs-features__block" data-aos="fade-up" data-aos-delay="200">
 								<div class="rs-features__item">
 									<div class="rs-features__icon">
 										<img src="./img/blocks/action_img-1.svg" alt="">
@@ -312,7 +333,7 @@
 								</div>
 							</div>
 
-							<div class="rs-features__block">
+							<div class="rs-features__block" data-aos="fade-up" data-aos-delay="300">
 								<div class="rs-features__item">
 									<div class="rs-features__icon">
 										<img src="./img/blocks/action_img-2.svg" alt="">
@@ -325,7 +346,7 @@
 								</div>
 							</div>
 
-							<div class="rs-features__block">
+							<div class="rs-features__block" data-aos="fade-up" data-aos-delay="400">
 								<div class="rs-features__item">
 									<div class="rs-features__icon">
 										<img src="./img/blocks/action_img-3.svg" alt="">
@@ -346,26 +367,24 @@
 			<section class="rs-services">
 				<div class="rs-services__container">
 					<div class="rs-services__head">
-						<div class="rs-services__wrapper">
-							<div class="rs-services__left">
-								<div class="section-header">
-									<h6>перечень услуг</h6>
-									<h2>Каждому человеку дарована красота</h2>
-								</div>
+						<div class="rs-services__left" data-aos="fade-right" data-aos-delay="100">
+							<div class="section-header">
+								<h6>перечень услуг</h6>
+								<h2>Каждому человеку <br> дарована красота</h2>
 							</div>
-							<div class="rs-services__right">
-								<p>Красота внутренняя — тонкие струны души, и красота внешняя — неповторимый чарующий
-									облик. </p>
-								<p>Нужно только обнаружить ее оригинальные черты и, наконец, открыть миру во всех
-									проявлениях. </p>
-							</div>
+						</div>
+						<div class="rs-services__right" data-aos="fade-right" data-aos-delay="300">
+							<p>Красота внутренняя — тонкие струны души, и красота внешняя — неповторимый чарующий
+								облик. </p>
+							<p>Нужно только обнаружить ее оригинальные черты и, наконец, открыть миру во всех
+								проявлениях. </p>
 						</div>
 					</div>
 
 					<div class="rs-services__wrapper">
 						<div class="rs-services__list">
 							<div class="rs-services__block">
-								<div class="rs-services__item">
+								<div class="rs-services__item" data-aos="fade-up" data-aos-delay="100">
 									<a href="#">
 										<div class="rs-services__img">
 											<img src="./img/blocks/services_img-1.jpg" alt="">
@@ -394,7 +413,7 @@
 							</div>
 
 							<div class="rs-services__block">
-								<div class="rs-services__item">
+								<div class="rs-services__item" data-aos="fade-up" data-aos-delay="200">
 									<a href="#">
 										<div class="rs-services__img">
 											<img src="./img/blocks/services_img-2.jpg" alt="">
@@ -423,7 +442,7 @@
 							</div>
 
 							<div class="rs-services__block">
-								<div class="rs-services__item">
+								<div class="rs-services__item" data-aos="fade-up" data-aos-delay="300">
 									<a href="#">
 										<div class="rs-services__img">
 											<img src="./img/blocks/services_img-3.jpg" alt="">
@@ -452,7 +471,7 @@
 							</div>
 
 							<div class="rs-services__block">
-								<div class="rs-services__item">
+								<div class="rs-services__item" data-aos="fade-up" data-aos-delay="400">
 									<a href="#">
 										<div class="rs-services__img">
 											<img src="./img/blocks/services_img-4.jpg" alt="">
@@ -491,13 +510,13 @@
 			<div class="rs-footer">
 				<div class="rs-footer__container">
 					<div class="rs-footer__wrapper">
-						<div class="rs-footer__left">
+						<div class="rs-footer__left" data-aos="fade-right" data-aos-delay="100">
 							<div class="section-header">
 								<h6>связаться со мной</h6>
-								<h2>Обретайте грани красоты</h2>
+								<h2>Обретайте грани <br> красоты</h2>
 							</div>
 						</div>
-						<div class="rs-footer__right">
+						<div class="rs-footer__right"  data-aos="fade-right" data-aos-delay="500">
 							<div class="rs-footer__contact">
 								<ul>
 									<li>
@@ -509,7 +528,7 @@
 										<a href="mailto:barsakov@inbox.ru">barsakov@inbox.ru</a>
 									</li>
 									<li>
-										<span>барсаков максим александрович</span>
+										<span>барсаков максим <br> александрович</span>
 										<a href="tel:79110836085">+7 911 083 60 85</a>
 									</li>
 								</ul>
@@ -519,8 +538,8 @@
 								<ul>
 									<li>
 										<span>Клиника Пирогова</span>
-										<a href="https://yandex.ru/maps/-/CDRsUNPL" target="_blank">г.
-											Санкт-Петербург Большой проспект Васильевского острова д 49-51 </a>
+										<a href="https://yandex.ru/maps/-/CDRsUNPL" target="_blank">
+											г. Санкт-Петербург <br> Большой проспект Васильевского острова д 49-51 </a>
 									</li>
 									<li>
 										<span>Клиника Екатерининская</span>
@@ -533,19 +552,56 @@
 					</div>
 
 					<div class="rs-footer__wrapper">
-						<div class="rs-footer__left">
+						<div class="rs-footer__left"  data-aos="fade-right" data-aos-delay="100">
 							<div class="rs-footer__logo">
 								<a href="#">
 									<img src="./img/header/logo.svg" alt="">
 								</a>
 							</div>
 						</div>
-						<div class="rs-footer__right">
+						<div class="rs-footer__right"  data-aos="fade-right" data-aos-delay="500">
 							<div class="rs-footer__body">
-								<div class="rs-footer__text">
-									<p>Медицинские услуги имеют противопоказания, необходима консультация специалиста.
-										Информация на сайте не является публичной офертой.</p>
-									<p>Данный ресурс может содержать материалы 18+</p>
+								<div class="rs-footer__block">
+									<div class="rs-footer__text">
+										<p>Медицинские услуги имеют противопоказания, необходима консультация
+											специалиста.
+											Информация на сайте не является публичной офертой.</p>
+										<p>Данный ресурс может содержать материалы 18+</p>
+									</div>
+
+									<div class="rs-footer__social">
+										<ul>
+											<li>
+												<a href="#">
+													<span>Вконтакте</span>
+													<img src="./img/icons/vk.svg" alt="">
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span>Telegram</span>
+													<img src="./img/icons/tg.svg" alt="">
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span>YouTube</span>
+													<img src="./img/icons/yt.svg" alt="">
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span>Instagram</span>
+													<img src="./img/icons/inst.svg" alt="">
+												</a>
+											</li>
+										</ul>
+									</div>
+
+									<div class="rs-footer__copyright">
+										© 2023 Барсаков Максим
+										<a href="#">Политика конфиденциальности</a>
+									</div>
 								</div>
 
 								<div class="rs-footer__social">
@@ -576,46 +632,12 @@
 										</li>
 									</ul>
 								</div>
-
-								<div class="rs-footer__copyright">
-									© 2023 Барсаков Максим
-									<a href="#">Политика конфиденциальности</a>
-								</div>
-							</div>
-
-							<div class="rs-footer__social">
-								<ul>
-									<li>
-										<a href="#">
-											<span>Вконтакте</span>
-											<img src="./img/icons/vk.svg" alt="">
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<span>Telegram</span>
-											<img src="./img/icons/tg.svg" alt="">
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<span>YouTube</span>
-											<img src="./img/icons/yt.svg" alt="">
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<span>Instagram</span>
-											<img src="./img/icons/inst.svg" alt="">
-										</a>
-									</li>
-								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</footer> -->
+		</footer>
 
 	</div>
 

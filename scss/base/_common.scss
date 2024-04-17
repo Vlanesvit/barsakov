@@ -16,45 +16,43 @@ section {
 // Text ========================================================================================================================================================
 
 // Button ========================================================================================================================================================
-.rs-btn {
-	position: relative;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	transition: all 0.3s ease 0s;
-	z-index: 10;
-	border-radius: 5px;
-}
-
-.rs-input {
-	outline: none;
-	width: 100%;
-	transition: 0.3s ease 0s;
-	transition-property: background-color, border-color;
-
-	&::placeholder {
-		color: #727272;
-	}
-
-	&._form-focus {
-	}
-
-	&._form-error {
-		border-color: #eb1320;
-	}
-
-	&._form-right {
-		border-color: #d2e3f0;
-		background-color: #e6fcf5;
-	}
-}
-
-textarea.rs-input {
-	resize: vertical;
-	min-height: 215px;
-}
 
 // Block  ========================================================================================================================================================
 .section-header {
+	max-width: 837px;
+
+	h6 {
+		font-family: "Cormorant", sans-serif;
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 100%;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: #f1f1f1;
+		margin-bottom: 25px;
+
+		@media (max-width: 1920px) {
+			font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
+			margin-bottom: calc(16px + (25 - 16) * ((100vw - 320px) / (1920 - 320)));
+		}
+
+		@media (max-width: 991.98px) {
+			line-height: 125%;
+		}
+	}
+
+	h2 {
+		font-weight: 100;
+		font-size: 64px;
+		line-height: 109%;
+		letter-spacing: -0.02em;
+
+		@media (max-width: 1920px) {
+			font-size: calc(40px + (64 - 40) * ((100vw - 320px) / (1920 - 320)));
+		}
+
+		@media (max-width: 991.98px) {
+			line-height: 120%;
+		}
+	}
 }

@@ -52,7 +52,7 @@ function menuFunction() {
 			const menuItemDropdownsMenuThree = menu.querySelectorAll('.menu__list > .menu__dropdown > .menu__dropdown-list > .menu__dropdown > .menu__dropdown-list > .menu__dropdown > .menu__dropdown-list > .menu__dropdown > .menu__dropdown-list');
 
 			// Добавляем иконки в пункты с выпадающим меню
-			menuItem.forEach(item => {
+			menuItemDropdowns.forEach(item => {
 				const menuLink = item.querySelector('a');
 				let icon = document.createElement('i');
 				icon.classList.add('menu__dropdown-arrow')
@@ -113,6 +113,27 @@ function menuFunction() {
 		});
 	}
 	menuInit()
+
+	function addMenuInit(block, button) {
+		const parrents = document.querySelectorAll(block);
+		if (parrents) {
+			parrents.forEach(parrent => {
+				const menuOpenBtn = parrent.querySelector(button)
+
+				menuOpenBtn.addEventListener('click', function () {
+					parrent.classList.toggle('_add-menu-open')
+				})
+
+				parrent.addEventListener('click', function (e) {
+					e.stopPropagation();
+				});
+				document.addEventListener('click', function (e) {
+					parrent.classList.remove('_add-menu-open')
+				});
+			});
+		}
+	}
+	addMenuInit('.rs-header__language', '.rs-header__language_btn')
 
 	// Функции открытия бургер-меню с блокировкой скролла
 	function menuOpen() {
@@ -239,3 +260,87 @@ function headerFixed() {
 	})
 }
 headerFixed()
+
+/* ====================================
+Поиск
+==================================== */
+function search() {
+	const searchs = document.querySelectorAll('.rs-search');
+
+	const searchModal = document.querySelector('.search-modal');
+	const searchShows = document.querySelectorAll('.search-show');
+
+	searchs.forEach(search => {
+		const searchSubmit = search.querySelector('.rs-search__submit')
+		const searchClear = search.querySelector('.rs-search__clear');
+		const searchInput = search.querySelector('.rs-search__input')
+		const searchForm = search.querySelector('.rs-search__form');
+
+		searchShows.forEach(searchShow => {
+			// Показать поиск
+			searchShow.addEventListener('click', function (e) {
+				e.preventDefault();
+				searchOpen()
+				putСursorInInput(searchInput);
+			})
+		});
+
+		// Закрываем поиск по оверлею
+		searchModal.addEventListener('click', function (e) {
+			const target = e.target;
+			// Делегируем событие
+			if (target.classList.contains('rs-search__overlay')) {
+				searchClose()
+			}
+		});
+
+		// Отправка формы
+		searchSubmit.addEventListener('click', function (e) {
+			e.preventDefault();
+			if (searchInput.value != '') {
+				searchForm.submit();
+			}
+		})
+
+		// При вводе появляется кнопка отчистки
+		searchInput.addEventListener('input', function (e) {
+			searchClear.style.display = "block";
+		})
+
+		// Очистить инпут
+		searchClear.addEventListener('click', function (e) {
+			searchInput.value = '';
+			searchClear.style.display = "none";
+			putСursorInInput(searchInput);
+		})
+	});
+
+	// Вспомогательные функции ========================================================================================================================================================
+	// Поставить курсор в инпут после клика
+	function putСursorInInput(input) {
+		setTimeout(function () {
+			input.focus()
+		}, 100);
+	}
+	// Функции открытия/закрытия поиска с блокировкой скролла
+	function searchOpen() {
+		bodyLock();
+		document.documentElement.classList.add("search-open");
+	}
+
+	function searchClose() {
+		bodyUnlock();
+		document.documentElement.classList.remove("search-open");
+	}
+
+	function searchToggle() {
+		bodyLockToggle();
+		document.documentElement.classList.toggle("search-open");
+	}
+	// Функции вызова курсора
+	addCursorHover(".rs-search__overlay", ".cursor", "cursor__active");
+	addCursorMove(".rs-search__overlay", ".cursor__circle")
+}
+if (document.querySelector('.rs-search')) {
+	search()
+}

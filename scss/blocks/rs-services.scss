@@ -1,14 +1,44 @@
 .rs-services {
+	margin-top: 140px;
+
+	@media (max-width: 1920px) {
+		margin-top: calc(75px + (140 - 75) * ((100vw - 320px) / (1920 - 320)));
+	}
+
 	// .rs-services__container
 	&__container {
 	}
 
 	// .rs-services__head
 	&__head {
+		@media (min-width: 991.98px) {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			margin: 0px -42px;
+
+			@media (max-width: 1920px) {
+				margin: 0px calc((-7.5px) + ((-42) - (-7.5)) * ((100vw - 991.98px) / (1920 - 991.98)));
+			}
+
+			& > * {
+				flex: 0 0 50%;
+				padding: 0px 42px;
+
+				@media (max-width: 1920px) {
+					padding: 0px calc(7.5px + (42 - 7.5) * ((100vw - 991.98px) / (1920 - 991.98)));
+				}
+			}
+		}
 	}
 
 	// .rs-services__wrapper
 	&__wrapper {
+		margin-top: 40px;
+
+		@media (max-width: 991.98px) {
+			margin-top: 30px;
+		}
 	}
 
 	// .rs-services__left
@@ -17,25 +47,175 @@
 
 	// .rs-services__right
 	&__right {
+		padding-top: 40px;
+
+		@media (max-width: 991.98px) {
+			margin-top: 38px;
+			padding-top: 0px;
+		}
+
+		p {
+			font-family: "Cormorant", sans-serif;
+			font-style: italic;
+			font-weight: 300;
+			font-size: 44px;
+			// line-height: 53px;
+			line-height: 120%;
+
+			@media (max-width: 1920px) {
+				font-size: calc(24px + (44 - 24) * ((100vw - 320px) / (1920 - 320)));
+			}
+
+			@media (max-width: 991.98px) {
+				line-height: 130%;
+				letter-spacing: -0.02em;
+			}
+
+			&:not(:last-child) {
+				margin-bottom: 18px;
+
+				@media (max-width: 1920px) {
+					margin-bottom: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+				}
+			}
+		}
 	}
 
 	// .rs-services__list
 	&__list {
+		@media (min-width: 767.98px) {
+			display: flex;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			margin: -70px -40px;
+
+			@media (max-width: 1920px) {
+				margin: calc((-15px) + ((-70) - (-15)) * ((100vw - 767.98px) / (1920 - 767.98)))
+					calc((-15px) + ((-40) - (-15)) * ((100vw - 767.98px) / (1920 - 767.98)));
+			}
+		}
 	}
 
 	// .rs-services__block
 	&__block {
+		flex: 0 0 100%;
+
+		@media (min-width: 767.98px) {
+			padding: 70px 40px;
+			flex: 0 0 50%;
+
+			@media (max-width: 1920px) {
+				padding: calc(15px + (70 - 15) * ((100vw - 767.98px) / (1920 - 767.98)))
+					calc(15px + (40 - 15) * ((100vw - 767.98px) / (1920 - 767.98)));
+			}
+		}
+
+		@media (max-width: 767.98px) {
+			&:not(:last-child) {
+				margin-bottom: 24px;
+			}
+		}
+
+		@media (min-width: 1439.98px) {
+			&:nth-child(2n) {
+				transform: translateY(140px);
+			}
+		}
 	}
 
 	// .rs-services__item
 	&__item {
+		@media (any-hover: hover) {
+			&:hover {
+				.rs-services__img {
+					img {
+						transform: scale(1.1);
+					}
+				}
+				.rs-services__desc {
+					span {
+						svg {
+							margin-left: 20px;
+						}
+					}
+				}
+			}
+		}
 	}
 
 	// .rs-services__img
 	&__img {
+		width: 100%;
+		padding-bottom: 77.31%;
+		position: relative;
+		overflow: hidden;
+
+		@media (max-width: 991.98px) {
+			padding-bottom: 98%;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: all 2s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+		}
 	}
 
 	// .rs-services__desc
 	&__desc {
+		padding: 40px 0px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@media (max-width: 1920px) {
+			padding: calc(16px + (40 - 16) * ((100vw - 320px) / (1920 - 320))) 0px;
+		}
+
+		@media (max-width: 991.98px) {
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+		}
+
+		h3 {
+			font-weight: 300;
+			font-size: 34px;
+			// line-height: 41px;
+			line-height: 120%;
+
+			@media (max-width: 1920px) {
+				font-size: calc(24px + (34 - 24) * ((100vw - 320px) / (1920 - 320)));
+			}
+		}
+
+		span {
+			font-family: "Cormorant", sans-serif;
+			font-weight: 600;
+			font-size: 20px;
+			// line-height: 28px;
+			line-height: 140%;
+			letter-spacing: 0.06em;
+			text-transform: uppercase;
+			text-align: center;
+			color: #fffcf8;
+
+			@media (max-width: 1920px) {
+				font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
+			}
+
+			@media (max-width: 991.98px) {
+				margin-top: 16px;
+			}
+
+			svg {
+				margin-left: 11px;
+				transition: all 0.3s ease 0s;
+			}
+		}
 	}
 }
