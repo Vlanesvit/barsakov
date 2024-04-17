@@ -1,11 +1,11 @@
 body {
-	background-image: url("../../img/blocks/body_bg.jpg");
+	background-image: url("../img/blocks/body_bg.jpg");
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: cover;
 
 	@media (max-width: 767.98px) {
-		background-image: url("../../img/blocks/body_bg-mob.jpg");
+		background-image: url("../img/blocks/body_bg-mob.jpg");
 	}
 }
 
